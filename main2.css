@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #94d1e0;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+}
+
+#description {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#survey-form {
+    background: white;
+    width: 66vw;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-grid {
+    display: grid;
+    /*grid-template-columns: 66vh 20vh;*/
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(13, 35px);
+    grid-gap: 1em;
+    padding: 1.2em; 
+    text-align: right;
+}
+
+.form-grid > label {
+    justify-self: end;
+    align-self: center;
+    font-size: 14px;
+    max-width: 30vw;
+}
+
+.form-grid > input, #radiobutton-div,
+#dropdown, #checkboxes {
+    justify-self: start;
+}
+
+#checkboxes {
+    text-align: left;
+}
+
+#textarea-label, #textarea {
+    grid-row: 12;
+}
+
+#submit {
+    grid-row: 13;
+    grid-column: 1 / 3;
+}
